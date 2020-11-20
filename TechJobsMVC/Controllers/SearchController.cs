@@ -23,6 +23,7 @@ namespace TechJobsMVC.Controllers
         public IActionResult Results(string searchType, string searchTerm)
         {
             List<Job> jobs;
+            ViewBag.searchTerm = searchTerm;
             if(searchTerm == null)
             {
                 jobs =  JobData.FindAll();
