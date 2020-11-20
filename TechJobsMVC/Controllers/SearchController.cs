@@ -24,6 +24,7 @@ namespace TechJobsMVC.Controllers
         {
             List<Job> jobs;
             ViewBag.searchTerm = searchTerm;
+            ViewBag.searchType = searchType;
             if(searchTerm == null)
             {
                 jobs =  JobData.FindAll();
